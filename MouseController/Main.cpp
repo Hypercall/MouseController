@@ -9,8 +9,9 @@ int main()
 		std::cout << "MouseController failed to start!" << std::endl;
 	while (true)
 	{
-		if (GetAsyncKeyState(VK_F12))
+		if (MouseController::GetAsyncKeyState(VK_F12))
 		{
+			std::cout << "Key pressed" << std::endl;
 			if (MouseController::Move_Mouse(500, 500))
 				std::cout << "Mouse moved to X : 500, Y : 500" << std::endl;
 		}
