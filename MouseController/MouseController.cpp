@@ -44,6 +44,7 @@ namespace MouseController
 	BOOLEAN WINAPI Uninit()
 	{
 		ZeroMemory(NtUserSendInput_Bytes, 30);
+		ZeroMemory(NtUserGetAsyncKeyState_Spoof, 30);
 		return TRUE;
 	}
 
