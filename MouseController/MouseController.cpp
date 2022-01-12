@@ -87,7 +87,7 @@ namespace MouseController
 		return NtUserSendInput(1, &input, sizeof(input));
 	}
 
-	/* This function moves the mouse using the syscall */
+	/* This function gets key state using the syscall*/
 	UINT WINAPI GetAsyncKeyState(UINT Key)
 	{
 		return NtUserGetAsyncKeyState(Key);
