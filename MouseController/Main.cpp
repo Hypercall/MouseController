@@ -1,4 +1,4 @@
-#include "MouseController.hpp"
+#include "MouseController.h"
 #include <iostream>
 
 int main()
